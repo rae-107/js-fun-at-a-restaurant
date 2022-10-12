@@ -1,7 +1,9 @@
-function nameMenuItem() {
+function nameMenuItem(food) {
+  console.log(`Delicious ${food}`)
 
-}
+};
 
+nameMenuItem('Sushi');
 
 module.exports = {
   nameMenuItem,
@@ -11,5 +13,3 @@ module.exports = {
   // decreasePrice,
   // createRecipe
 }
-
-
