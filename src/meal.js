@@ -1,13 +1,18 @@
-function nameMenuItem(food) {
-  console.log(`Delicious ${food}`)
-
+function nameMenuItem(foods) {
+  return `Delicious ${foods}`
 };
 
-nameMenuItem('Sushi');
+
+console.log(nameMenuItem("Pizza"));
+console.log(nameMenuItem("Burrito"));
+console.log(nameMenuItem("Taco"));
+
+
+
 
 module.exports = {
   nameMenuItem,
-  // createMenuItem,
+  createMenuItem,
   // addIngredients,
   // formatPrice,
   // decreasePrice,
