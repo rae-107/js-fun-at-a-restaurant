@@ -8,6 +8,16 @@ console.log(nameMenuItem("Burrito"));
 console.log(nameMenuItem("Taco"));
 
 
+function createMenuItem(name, price, type) {
+  var menuItem = {
+    name: name,
+    price: price,
+    type: type
+  }
+  return menuItem
+}
+
+
 
 
 module.exports = {
