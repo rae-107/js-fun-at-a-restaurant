@@ -17,14 +17,21 @@ function createMenuItem(name, price, type) {
   return menuItem
 }
 
+function addIngredients(food, ingredients) {
 
+ //ingredients.push(food)
+ if(!ingredients.includes(food)) {
+   ingredients.push(food);
+ }
+  }
+  
 
 
 module.exports = {
   nameMenuItem,
   createMenuItem,
-  // addIngredients,
-  // formatPrice,
+  addIngredients,
+  //formatPrice,
   // decreasePrice,
   // createRecipe
 }
