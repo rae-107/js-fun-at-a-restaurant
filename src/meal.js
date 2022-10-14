@@ -19,19 +19,20 @@ function createMenuItem(name, price, type) {
 
 function addIngredients(food, ingredients) {
 
- //ingredients.push(food)
  if(!ingredients.includes(food)) {
    ingredients.push(food);
  }
   }
   
-
+function formatPrice(formattedPrice) {
+  return "$" + formattedPrice
+}
 
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
-  //formatPrice,
+  formatPrice,
   // decreasePrice,
   // createRecipe
 }
