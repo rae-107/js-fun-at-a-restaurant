@@ -28,11 +28,16 @@ function formatPrice(formattedPrice) {
   return "$" + formattedPrice
 }
 
+function decreasePrice(price) {
+  return price - (price * .1) 
+}
+
+
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
   formatPrice,
-  // decreasePrice,
+  decreasePrice,
   // createRecipe
 }
