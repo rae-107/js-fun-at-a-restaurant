@@ -1,11 +1,6 @@
 function nameMenuItem(foods) {
-  return `Delicious ${foods}`
-};
-
-
-console.log(nameMenuItem("Pizza"));
-console.log(nameMenuItem("Burrito"));
-console.log(nameMenuItem("Taco"));
+  return `Delicious ${foods}`;
+}
 
 
 function createMenuItem(name, price, type) {
@@ -14,23 +9,26 @@ function createMenuItem(name, price, type) {
     price: price,
     type: type
   }
-  return menuItem
+  return menuItem;
 }
 
-function addIngredients(food, ingredients) {
 
+function addIngredients(food, ingredients) {
  if(!ingredients.includes(food)) {
    ingredients.push(food);
  }
-  }
+}
   
+
 function formatPrice(formattedPrice) {
-  return "$" + formattedPrice
+  return "$" + formattedPrice;
 }
 
+
 function decreasePrice(price) {
-  return price - (price * .1) 
+  return price - (price * .1);
 }
+
 
 function createRecipe(title, ingredients, type) {
   var recipe = {
@@ -38,7 +36,7 @@ function createRecipe(title, ingredients, type) {
     ingredients: ingredients,
     type: type
   }
-  return recipe
+  return recipe;
 }
 
 
